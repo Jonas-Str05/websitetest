@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | [Firmenname]</title>
+<meta name="description" content="[Platzhalter Beschreibung]">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="kopf">
+  <a class="logo" href="index.html">[Logo]</a>
+  <nav><a href="angebot.html">Angebot</a><a href="referenzen.html">Referenzen</a><a href="ueber-uns.html">Über uns</a><a href="index.html#kontakt">Kontakt</a><a href="kundenzugang.html">Kundenzugang</a></nav>
+</header>
+<main>
+
+<section class="seitenkopf"><h1>Admin</h1><p>Felix und Jonas</p><button id="abmelden">[Abmelden]</button></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Kunden</div><table><thead><tr><th>Firma</th><th>E-Mail</th><th>Guthaben</th><th>Offene Anfragen</th><th>Mehraufwand offen</th></tr></thead><tbody id="a-kunden"></tbody></table></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Offene Anfragen</div><table><thead><tr><th>Datum</th><th>Kunde</th><th>Titel</th><th>Anhang</th><th>Status</th><th>Erledigen</th></tr></thead><tbody id="a-anfragen"></tbody></table></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Stunden buchen</div><form class="formular" id="buchen">
+  <div><label>Kunde</label><select id="b-kunde"></select></div>
+  <div><label>Was wurde gemacht?</label><input id="b-text" required></div>
+  <div><label>Stunden (Viertelstunden)</label><input type="number" id="b-std" min="0.25" step="0.25" value="1" required></div>
+  <div><button type="submit">[Buchen]</button></div>
+  <div class="hinweis">Zuerst wird das Guthaben verbraucht. Was darüber liegt, landet als Mehraufwand zur Abrechnung.</div>
+</form></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Neuer Kundenzugang</div><form class="formular" id="neu">
+  <div><label>Firma</label><input id="n-firma" required></div>
+  <div><label>Ansprechpartner</label><input id="n-name"></div>
+  <div><label>E-Mail (Login)</label><input type="email" id="n-email" required></div>
+  <div><label>Startpasswort</label><input id="n-pw" required></div>
+  <div><label>Startguthaben (Stunden)</label><input type="number" id="n-std" min="0" max="3" step="1" value="1"></div>
+  <div><button type="submit">[Anlegen]</button></div>
+</form></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Test-Werkzeuge</div><div class="stapel">
+  <button id="monat">Monatswechsel simulieren (+1 Std. für alle, max. 3)</button>
+  <button id="reset">Demo-Daten zurücksetzen</button>
+</div></div></section>
+
+</main>
+<footer class="fuss">
+  <div class="innen raster r4">
+    <div class="stapel"><div>[Firmenname]</div><div>[Kurzer Satz]</div></div>
+    <div class="stapel"><div>Kontakt</div><div>[Telefon]</div><div>[E-Mail]</div><div>[Adresse]</div></div>
+    <div class="stapel"><div>Seiten</div><div><a href="angebot.html">Angebot</a></div><div><a href="referenzen.html">Referenzen</a></div><div><a href="ueber-uns.html">Über uns</a></div><div><a href="index.html#kontakt">Kontakt</a></div><div><a href="kundenzugang.html">Kundenzugang</a></div></div>
+    <div class="stapel"><div>[Social Media]</div><div>[Öffnungs- oder Erreichbarkeitszeiten]</div></div>
+  </div>
+  <div class="innen unten">
+    <span>© [Jahr] [Firmenname]</span>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+<script src="portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kundenportal | [Firmenname]</title>
+<meta name="description" content="[Platzhalter Beschreibung]">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="kopf">
+  <a class="logo" href="index.html">[Logo]</a>
+  <nav><a href="angebot.html">Angebot</a><a href="referenzen.html">Referenzen</a><a href="ueber-uns.html">Über uns</a><a href="index.html#kontakt">Kontakt</a><a href="kundenzugang.html">Kundenzugang</a></nav>
+</header>
+<main>
+
+<section class="seitenkopf"><h1>Kundenportal</h1><p id="p-firma">[Firma]</p><button id="abmelden">[Abmelden]</button></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Stundenkonto</div><div class="raster r3">
+  <div class="box stapel"><div>Verfügbare Stunden</div><div id="p-guthaben" style="font-size:32px"></div><div>von maximal 3</div></div>
+  <div class="box stapel"><div>Nächste Gutschrift</div><div id="p-naechste"></div><div>+1 Stunde, solange unter 3</div></div>
+  <div class="box stapel"><div>Mehraufwand diesen Monat</div><div id="p-mehr"></div><div>wird extra abgerechnet</div></div>
+</div></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Änderungswunsch stellen</div><form class="formular" id="wunsch">
+  <div><label>Titel</label><input id="w-titel" required></div>
+  <div><label>Was soll geändert werden?</label><textarea id="w-text" required></textarea></div>
+  <div><label>Dringlichkeit</label><select id="w-prio"><option>normal</option><option>dringend</option></select></div>
+  <div><label>PDF anhängen (optional, max. 2 MB)</label><input type="file" id="w-pdf" accept="application/pdf,.pdf"></div>
+  <div><button type="submit">[Absenden]</button></div>
+</form></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Meine Anfragen</div><table><thead><tr><th>Datum</th><th>Titel</th><th>Anhang</th><th>Status</th><th>Stunden</th></tr></thead><tbody id="p-anfragen"></tbody></table></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Verlauf Stundenkonto</div><table><thead><tr><th>Datum</th><th>Vorgang</th><th>Stunden</th><th>davon Mehraufwand</th><th>Stand danach</th></tr></thead><tbody id="p-verlauf"></tbody></table></div></section>
+<section class="abschnitt"><div class="innen"><div class="etikett">Weitere Bereiche (später)</div><div class="raster r3">
+  <div class="box">[Vertrag und Paket]</div>
+  <div class="box">[Rechnungen als PDF]</div>
+  <div class="box">[Website-Status: online, SSL, letzte Sicherung]</div>
+  <div class="box">[Besucherzahlen]</div>
+  <div class="box">[Domain und Laufzeit]</div>
+  <div class="box">[Ansprechpartner und Termin buchen]</div>
+</div></div></section>
+
+</main>
+<footer class="fuss">
+  <div class="innen raster r4">
+    <div class="stapel"><div>[Firmenname]</div><div>[Kurzer Satz]</div></div>
+    <div class="stapel"><div>Kontakt</div><div>[Telefon]</div><div>[E-Mail]</div><div>[Adresse]</div></div>
+    <div class="stapel"><div>Seiten</div><div><a href="angebot.html">Angebot</a></div><div><a href="referenzen.html">Referenzen</a></div><div><a href="ueber-uns.html">Über uns</a></div><div><a href="index.html#kontakt">Kontakt</a></div><div><a href="kundenzugang.html">Kundenzugang</a></div></div>
+    <div class="stapel"><div>[Social Media]</div><div>[Öffnungs- oder Erreichbarkeitszeiten]</div></div>
+  </div>
+  <div class="innen unten">
+    <span>© [Jahr] [Firmenname]</span>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+<script src="portal.js"></script>
+</body>
+</html>
